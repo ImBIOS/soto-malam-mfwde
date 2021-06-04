@@ -2,7 +2,7 @@
   "name": "Soto Malam Restaurant",
   "short_name": "Soto Malam",
   "description": "Best Soto Under The Night",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
