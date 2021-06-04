@@ -1,0 +1,75 @@
+/* Small devices (portrait tablets and large phones, 600 and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    grid-template-columns: 1fr repeat(2, fit-content(500px));
+    justify-items: end;
+
+    #title {
+      grid-column: 1 / 2;
+      justify-self: start;
+      margin-left: 20px;
+      margin-block: 20px;
+    }
+  }
+
+  #hamburger,
+  #close-nav {
+    display: none;
+  }
+
+  #top-nav {
+    width: auto;
+    height: auto;
+    position: inherit;
+    padding: 0;
+    /* menyembunyikan #top-nav -250 (sesuai dengan ukuran lebar drawer) ke kiri */
+    transform: translate(0, 0);
+    background-color: transparent;
+    z-index: 1;
+
+    &.open {
+      transform: translate(0, 0);
+    }
+  }
+
+  nav {
+    padding: 20px;
+
+    ul {
+      grid-template-columns: 1fr repeat(3, fit-content(400px));
+      justify-items: end;
+      margin-top: 20px;
+
+      li.active {
+        grid-column: 1 / 2;
+      }
+    }
+  }
+
+  .hero-text {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  #content {
+    padding: 2rem 5rem;
+
+    #restaurant-list {
+      grid-template-columns: repeat(2, 50%);
+    }
+
+    button {
+      width: 40%;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #content {
+    #restaurant-list {
+      grid-template-columns: repeat(3, 33.33%);
+    }
+  }
+}
