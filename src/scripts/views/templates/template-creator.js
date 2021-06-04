@@ -24,7 +24,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
 <div class="restaurant-item">
-      <h3 class="city">Kota ${restaurant.city}</h3>
+      <h3 class="city">${restaurant.city} City</h3>
       <img src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}" alt="${restaurant.name}">
       <div class="detail">
         <h4><span class="fa fa-star checked"></span> ${restaurant.rating}</h4>
