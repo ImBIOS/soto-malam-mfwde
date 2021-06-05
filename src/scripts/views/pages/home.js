@@ -24,6 +24,7 @@ const Home = {
     const restaurants = await RestaurantApiSource.listRestaurants();
     const restaurantsCount = restaurants.length;
     const restaurantsContainer = document.querySelector("#restaurant-list");
+    restaurantsContainer.innerHTML = "Loading...";
     const loadButton = document.querySelector("#load-more");
 
     let dataRequested = 3;
