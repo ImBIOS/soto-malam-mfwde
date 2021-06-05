@@ -35,7 +35,7 @@ const Home = {
         .map((restaurant) => createRestaurantItemTemplate(restaurant)).join("");
     };
 
-    // load restaurant data when element loaded
+    // load restaurant data when load element loaded
     loadButton.addEventListener("load", displayRestaurantList());
 
     // load new data function
