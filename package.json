@@ -1,7 +1,7 @@
 {
   "name": "restaurant-apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "submission for mfwde dicoding",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
@@ -9,9 +9,13 @@
     "test": "karma start",
     "lint": "eslint ./src"
   },
-  "keywords": [],
-  "author": "your_name <your.email@domain.com>",
-  "license": "ISC",
+  "keywords": [
+    "pwa",
+    "cache",
+    "front-end"
+  ],
+  "author": "Imamuzzaki Abu Salam <imamuzzaki@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
@@ -46,5 +50,6 @@
     "idb": "^6.1.2",
     "regenerator-runtime": "^0.13.5",
     "serviceworker-webpack-plugin": "^1.0.1"
-  }
+  },
+  "homepage": "https://github.com/ImBIOS/soto-malam-mfwde#readme"
 }
