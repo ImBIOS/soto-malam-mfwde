@@ -15,6 +15,9 @@
         "no-console":"off",
         "quotes": [2, "double", { "avoidEscape": true }],
         "no-underscore-dangle":"off",
-        "no-restricted-globals":"off"
-    }
+        "no-restricted-globals":"off",
+        "consistent-return": 0,
+        "no-prototype-builtins": 0
+    },
+    "plugins": ["jasmine"]
 }
