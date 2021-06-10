@@ -41,25 +41,6 @@ url('${`${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}`}');">
     </div>
 `;
 
-// eslint-disable-next-line no-lone-blocks
-{ /* <h2 class="restaurant__title">${restaurant.name}</h2>
-<img class="restaurant__poster"
-src="${`${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}`}"
-alt="${restaurant.name}" />
-<div class="restaurant__info">
-<h3>Information</h3>
-  <h4>City</h4>
-  <p>${restaurant.city}</p>
-  <h4>Address</h4>
-  <p>${restaurant.address}</p>
-  <h4>Rating</h4>
-  <p>${restaurant.rating}</p>
-</div>
-<div class="restaurant__overview">
-  <h3>Description</h3>
-  <p>${restaurant.description}</p>
-</div> */ }
-
 const createRestaurantItemTemplate = (restaurant) => `
 <div class="restaurant-item">
       <h3 class="city">${restaurant.city} City</h3>

@@ -8,9 +8,6 @@ class RestaurantApiSource {
       .catch((error) => error);
 
     return response.restaurants;
-    // return response.json();
-    // const responseJson = await response.json();
-    // return responseJson.restaurants;
   }
 
   static async detailRestaurant(id) {
