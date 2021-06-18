@@ -5,6 +5,13 @@ const Home = {
   async render() {
     return `
     <div class="hero-image">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/heros/hero-image_3-small.jpg">
+                <img 
+                    src='./images/heros/hero-image_3-large.jpg' 
+                    alt="night scene hero image"></img>
+            
+            </picture>
       <div class="hero-text">
         <h1>Best Soto Under The Night</h1>
         <p>Served under the moon.</p>

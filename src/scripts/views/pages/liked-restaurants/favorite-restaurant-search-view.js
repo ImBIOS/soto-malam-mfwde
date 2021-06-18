@@ -6,9 +6,11 @@ class FavoriteRestaurantSearchView {
        <div class="content">
        <input id="query" type="text">
        <h2 class="content__heading">Your Liked Restaurant</h2>
-           <div id="restaurants" class="restaurants">
+       <div id="content">
+           <div id="restaurant-list" class="restaurant-list">
                       
            </div>
+        </div>
        </div>
    `;
   }
@@ -31,9 +33,9 @@ class FavoriteRestaurantSearchView {
       html = this._getEmptyRestaurantTemplate();
     }
 
-    document.getElementById("restaurants").innerHTML = html;
+    document.getElementById("restaurant-list").innerHTML = html;
 
-    document.getElementById("restaurants").dispatchEvent(new Event("restaurants:updated"));
+    document.getElementById("restaurant-list").dispatchEvent(new Event("restaurant-list:updated"));
   }
 
   _getEmptyRestaurantTemplate() {

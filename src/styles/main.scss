@@ -175,13 +175,20 @@ nav {
   min-height: calc(100vh - 175px);
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../public/images/heros/hero-image_3.jpg");
+.hero-image-detail {
   height: 75vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.hero-image picture img {
+  height: 75vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
   position: relative;
 }
 
@@ -349,4 +356,16 @@ footer {
 
 #likeButton {
   z-index: 500;
+}
+
+.restaurant__title {
+  margin-bottom: 40px;
+}
+
+.content__heading {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
 }
