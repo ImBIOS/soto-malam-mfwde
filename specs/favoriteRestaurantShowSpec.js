@@ -29,7 +29,7 @@ describe("Showing all favorite restaurants", () => {
     });
 
     it("should show the information that no restaurants have been liked", (done) => {
-      document.getElementById("restaurants").addEventListener("restaurants:updated", () => {
+      document.getElementById("restaurant-list").addEventListener("restaurant-list:updated", () => {
         expect(document.querySelectorAll(".restaurant-item__not__found").length)
           .toEqual(1);
 
@@ -48,7 +48,7 @@ describe("Showing all favorite restaurants", () => {
 
   describe("When favorite restaurants exist", () => {
     it("should show the restaurants", (done) => {
-      document.getElementById("restaurants").addEventListener("restaurants:updated", () => {
+      document.getElementById("restaurant-list").addEventListener("restaurant-list:updated", () => {
         expect(document.querySelectorAll(".restaurant-item").length).toEqual(2);
         done();
       });
@@ -56,10 +56,10 @@ describe("Showing all favorite restaurants", () => {
       const favoriteRestaurants = spyOnAllFunctions(FavoriteRestaurantIdb);
       favoriteRestaurants.getAllRestaurants.and.returnValues([
         {
-          id: 11, title: "A", vote_average: 3, overview: "Sebuah restaurant A",
+          id: 11, name: "A", vote_average: 3, overview: "Sebuah restaurant A",
         },
         {
-          id: 22, title: "B", vote_average: 4, overview: "Sebuah restaurant B",
+          id: 22, name: "B", vote_average: 4, overview: "Sebuah restaurant B",
         },
       ]);
 
